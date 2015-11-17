@@ -1,0 +1,15 @@
+---
+- hosts: box
+
+  vars_files:
+    - ./box_vars.yml
+  roles:
+     - {
+         role: "sa-node",
+         root_dir: "{{playbook_dir}}/public/ansible_developer_recipes"
+       }
+     - {
+         role: "sa-nginx",
+         root_dir: "{{playbook_dir}}/public/ansible_developer_recipes"
+       }
+

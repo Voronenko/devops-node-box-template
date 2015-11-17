@@ -1,0 +1,15 @@
+ box_user: deploy
+ box_authorized_keys:
+   - "{{playbook_dir}}/components/files/ssh/vyacheslav.pub"
+
+ box_domain: "vagrant.dev"
+ box_host: "box"
+
+ ssl_key_fqdn:  "{{jenkins_host}}.{{jenkins_domain}}"
+ ssl_key_name:  box_selfsigned
+ ssl_cert_name: box_selfsigned
+
+ ssl_install_path: /etc/nginx
+ ssl_files:
+   - "{{ssl_key_name}}.key"
+   - "{{ssl_cert_name}}.crt"
