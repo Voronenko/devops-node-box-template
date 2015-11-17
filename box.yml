@@ -12,4 +12,8 @@
          role: "sa-nginx",
          root_dir: "{{playbook_dir}}/public/ansible_developer_recipes"
        }
+     - {
+         role: "sa-mongo",
+         root_dir: "{{playbook_dir}}/public/ansible_developer_recipes"
+       }
 

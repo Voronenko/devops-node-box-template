@@ -9,6 +9,9 @@
  ssl_key_name:  box_selfsigned
  ssl_cert_name: box_selfsigned
 
+ mongo_version: "3"
+ node_version: "0.12"
+
  ssl_install_path: /etc/nginx
  ssl_files:
    - "{{ssl_key_name}}.key"
